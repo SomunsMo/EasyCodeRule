@@ -1,0 +1,23 @@
+server:
+  port: 8124
+
+spring:
+  datasource:
+    url: jdbc:mysql://myserver.com:3306/dbName?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8&allowPublicKeyRetrieval=true&useSSL=false
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.zaxxer.hikari.HikariDataSource
+
+# Mybatis配置
+mybatis:
+  mapper-locations: classpath:mapper/**/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+    cache-enabled: true
+
+# 日志配置
+logging:
+  level:
+    com.somunsm: DEBUG
+    com.baomidou.mybatisplus: DEBUG

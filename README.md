@@ -4,24 +4,27 @@
 
 该项目为 IntelliJ IDEA 中 EasyCode 插件的规则仓库。主要用于生成DB Table的相关类，包括但不限于：
 
-- Entity
-- Param
-- Vo
-- Mapper
-- Service
-- Controller
+### Somunsm模板
 
-### Core包
+| 包名         | 描述          |
+|------------|-------------|
+| Entity     | DB实体类       |
+| Param      | 接口请求参数类     |
+| Vo         | 接口响应类       |
+| Mapper     | DAO层        |
+| Service    | Service层    |
+| Controller | Controller层 |
 
-- Page
-- Result
-- Status
+### SomunsmBasic模板
 
-## 适用范围
+| 包名        | 描述   |
+|-----------|------|
+| exception | 异常类  |
+| Page      | 分页   |
+| Result    | 响应对象 |
+| Status    | 状态码  |
 
-SpringBoot + Mybatis项目
-
-## EasyCode 配置
+## EasyCode 配置说明
 
 ### Template
 
@@ -32,9 +35,13 @@ SpringBoot + Mybatis项目
 
 ### Global Config
 
-| 配置名                | 描述                  |
-|--------------------|---------------------|
-| queryPagePath      | [必须] 分页接口及具体实现的存放路径 |
-| responseResultPath | [必须] 统一响应类及状态码存放路径  |
-| field_optimistic   | 乐观锁的字段名，不需要则留空      |
-| field_remove       | [必须] 逻辑删除的字段名       |
+| 配置名                | 描述                   |
+|--------------------|----------------------|
+| queryPagePath      | [必须] 分页接口及具体实现的存放路径  |
+| responseResultPath | [必须] 统一响应类及状态码存放路径   |
+| field_optimistic   | 乐观锁的字段名（蛇形命名），不需要则留空 |
+| field_remove       | [必须] 逻辑删除的字段名（蛇形命名）  |
+
+## 适用范围
+
+SpringBoot + Mybatis + MySql项目

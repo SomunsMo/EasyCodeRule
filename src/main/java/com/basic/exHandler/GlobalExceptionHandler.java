@@ -1,6 +1,7 @@
 package com.basic.exHandler;
 
 import com.somunsm.core.exception.UpdateException;
+import com.somunsm.core.result.ResponseResult;
 import jakarta.servlet.http.HttpServletRequest;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -17,16 +18,16 @@ public class GlobalExceptionHandler {
 
     @ExceptionHandler
     @ResponseBody
-    public String defaultHandler(HttpServletRequest req, RuntimeException ex) {
+    public ResponseResult<?> defaultHandler(HttpServletRequest req, Exception ex) {
         log.error("default exception Handler:", ex);
-        return ex.getMessage();
+        return ResponseResult.fail();
     }
 
     @ExceptionHandler(UpdateException.class)
     @ResponseBody
-    public String updateExHandler(HttpServletRequest req, RuntimeException ex) {
+    public ResponseResult<?> updateExHandler(HttpServletRequest req, UpdateException ex) {
         log.error(ex.getMessage());
-        return ex.getMessage();
+        return ResponseResult.failMsg(ex.getMessage());
     }
 
 }

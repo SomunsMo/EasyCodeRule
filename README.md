@@ -8,23 +8,24 @@ EasyCode基于Velocity，语法问题找[文档](https://velocity.apache.org/eng
 
 ### Somunsm模板
 
-| 包名         | 描述          |
-|------------|-------------|
-| Entity     | DB实体类       |
-| Param      | 接口请求参数类     |
-| Vo         | 接口响应类       |
-| Mapper     | DAO层        |
-| Service    | Service层    |
-| Controller | Controller层 |
+| 包名         | 描述           |
+|------------|--------------|
+| entity     | DB实体类        |
+| param      | 接口请求参数类      |
+| sortParam  | 接口请求排序字段索引枚举 |
+| vo         | 接口响应类        |
+| mapper     | DAO层         |
+| service    | Service层     |
+| controller | Controller层  |
 
 ### SomunsmBasic模板
 
 | 包名        | 描述   |
 |-----------|------|
 | exception | 异常类  |
-| Page      | 分页   |
-| Result    | 响应对象 |
-| Status    | 状态码  |
+| page      | 分页   |
+| result    | 响应对象 |
+| status    | 状态码  |
 
 ## EasyCode 配置说明
 

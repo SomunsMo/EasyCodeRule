@@ -6,6 +6,10 @@
 
 EasyCode基于Velocity，语法问题找[文档](https://velocity.apache.org/engine/devel/user-guide.html)
 
+## 适用范围
+
+SpringBoot + Mybatis + MySql项目
+
 ### Somunsm模板
 
 | 包名         | 描述           |
@@ -45,7 +49,3 @@ EasyCode基于Velocity，语法问题找[文档](https://velocity.apache.org/eng
 | responseResultPath | [必须] 统一响应类及状态码存放路径   |
 | field_optimistic   | 乐观锁的字段名（蛇形命名），不需要则留空 |
 | field_remove       | [必须] 逻辑删除的字段名（蛇形命名）  |
-
-## 适用范围
-
-SpringBoot + Mybatis + MySql项目

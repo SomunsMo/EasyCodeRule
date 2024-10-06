@@ -1,8 +1,10 @@
 # EasyCodeRule
 
-## 项目说明
+该项目为 IntelliJ IDEA 中 EasyCode 插件的规则仓库，主要用于生成DB Table相关的类。
 
-该项目为 IntelliJ IDEA 中 EasyCode 插件的规则仓库。主要用于生成DB Table的相关类，包括但不限于：
+## 特殊说明
+
+EasyCode基于Velocity，语法问题找[文档](https://velocity.apache.org/engine/devel/user-guide.html)
 
 ### Somunsm模板
 

@@ -10,6 +10,8 @@ EasyCode基于Velocity，语法问题找[文档](https://velocity.apache.org/eng
 
 SpringBoot + Mybatis + MySql项目
 
+## EasyCode 配置说明
+
 ### Somunsm模板
 
 | 包名         | 描述           |
@@ -31,14 +33,12 @@ SpringBoot + Mybatis + MySql项目
 | result    | 响应对象 |
 | status    | 状态码  |
 
-## EasyCode 配置说明
-
 ### Template
 
-| 模板分类名        | 描述                                                                 |
-|--------------|--------------------------------------------------------------------|
-| Somunsm      | 生成Controller、Service、ServiceImpl、Mapper、Mapper.xml、Entity、Param、Vo |
-| SomunsmBasic | somunsm模板分类生成的类所需的基础类                                              |
+| 模板分类名        | 描述                                                                            |
+|--------------|-------------------------------------------------------------------------------|
+| Somunsm      | 生成Controller、Service、ServiceImpl、Mapper、Mapper.xml、Entity、Param、Vo、SortParam等 |
+| SomunsmBasic | somunsm模板分类生成的类所需的基础类                                                         |
 
 ### Global Config
 
